@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: pocket-writer-backend
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+      idle-timeout: 30000
+      connection-timeout: 20000
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+    open-in-view: false
+    
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    com.pocketwriter.backend: INFO
+
+server:
+  port: 0
+  error:
+    include-message: always
+    include-binding-errors: always 

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Allow cleartext traffic for debug builds -->
+    <debug-overrides>
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="user" />
+        </trust-anchors>
+    </debug-overrides>
+    
+    <!-- Allow cleartext traffic to localhost and private IP addresses for testing -->
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- Android Emulator localhost -->
+        <domain includeSubdomains="true">10.0.2.2</domain>
+        <domain includeSubdomains="true">localhost</domain>
+        
+        <!-- Local Development Network (from WiFi details) -->
+        <domain includeSubdomains="true">172.23.33.24</domain> <!-- Laptop IP from screenshot -->
+        <domain includeSubdomains="true">172.23.39.254</domain> <!-- Gateway from screenshot -->
+        
+        <!-- Common development machine IPs -->
+        <domain includeSubdomains="true">172.23.33.1</domain>
+        <domain includeSubdomains="true">172.23.33.100</domain>
+        <domain includeSubdomains="true">192.168.0.0</domain>
+        <domain includeSubdomains="true">192.168.1.0</domain>
+        <domain includeSubdomains="true">192.168.0.1</domain>
+        <domain includeSubdomains="true">192.168.1.1</domain>
+        <domain includeSubdomains="true">127.0.0.1</domain>
+    </domain-config>
+</network-security-config> 

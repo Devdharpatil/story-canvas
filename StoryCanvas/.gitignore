@@ -1,0 +1,30 @@
+# IDE specific files generally ignored at the root of the workspace
+# These might be generated if you open the "StoryCanvas" folder itself as a project in IntelliJ/Android Studio.
+.idea/
+*.iws
+*.ipr
+
+# VS Code workspace settings - usually user-specific
+# .vscode/  <-- Let's NOT ignore this at the root if your screenshot implies .vscode is for the overall POCKET WRITER workspace.
+              # If .vscode/settings.json contains project-specific useful settings FOR StoryCanvas, you might commit it.
+              # If it's just editor preferences, ignore it.
+              # For now, let's assume you MIGHT want to commit what's in .vscode/ if it's for the project.
+              # If it's inside the POCKET WRITER folder but outside StoryCanvas, it won't be part of this Git repo anyway.
+
+# OS Generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Log files (if any are ever generated at the root of StoryCanvas)
+*.log
+logs/
+
+# Local Envs and Secrets (if any at the root of StoryCanvas)
+.env
+.env.*
+!.env.example

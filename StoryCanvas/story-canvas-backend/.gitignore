@@ -1,0 +1,62 @@
+# Compiled class files and JARs
+*.class
+*.jar
+*.war
+*.ear
+
+# Build artifacts
+build/
+out/
+target/
+
+# Gradle
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# VS Code
+.vscode/
+
+# STS (Spring Tool Suite) / Eclipse
+.settings/
+.classpath
+.project
+.apt_generated/
+.factorypath
+.springBeans
+.sts4-cache/
+bin/
+
+# NetBeans
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# Log files
+*.log
+logs/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Secrets and environment-specific configurations
+.env
+application-local.properties
+application-dev.properties
+
+# Kotlin build artifacts
+*.DSYM/
+*.externalNativeBuild/
+.externalNativeBuild/
+.cxx/
+*.hprof
+captures/

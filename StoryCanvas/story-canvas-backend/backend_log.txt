@@ -1,0 +1,73 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.13/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :checkKotlinGradlePluginConfigurationErrors
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :resolveMainClassName UP-TO-DATE
+
+> Task :bootRun
+03:46:39.338 [main] INFO com.pocketwriter.backend.PocketWriterBackendApplication -- Starting Pocket Writer Backend Application
+03:46:39.589 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to System property 'spring.devtools.restart.enabled' being set to false
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v3.2.12)
+
+2025-05-27T03:46:41.437+05:30  INFO 9920 --- [pocket-writer-backend] [           main] c.p.b.PocketWriterBackendApplicationKt   : Starting PocketWriterBackendApplicationKt using Java 21.0.7 with PID 9920 (E:\Softwares\Java Projects\Pocket Writer\StoryCanvas\story-canvas-backend\build\classes\kotlin\main started by Dell in E:\Softwares\Java Projects\Pocket Writer\StoryCanvas\story-canvas-backend)
+2025-05-27T03:46:41.461+05:30  INFO 9920 --- [pocket-writer-backend] [           main] c.p.b.PocketWriterBackendApplicationKt   : No active profile set, falling back to 1 default profile: "default"
+2025-05-27T03:46:41.724+05:30  INFO 9920 --- [pocket-writer-backend] [           main] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-27T03:46:45.326+05:30  INFO 9920 --- [pocket-writer-backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-27T03:46:45.437+05:30  INFO 9920 --- [pocket-writer-backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 98 ms. Found 2 JPA repository interfaces.
+2025-05-27T03:46:46.747+05:30  INFO 9920 --- [pocket-writer-backend] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2025-05-27T03:46:46.797+05:30  INFO 9920 --- [pocket-writer-backend] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-27T03:46:46.798+05:30  INFO 9920 --- [pocket-writer-backend] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-05-27T03:46:46.919+05:30  INFO 9920 --- [pocket-writer-backend] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-27T03:46:46.921+05:30  INFO 9920 --- [pocket-writer-backend] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5193 ms
+2025-05-27T03:46:47.209+05:30  INFO 9920 --- [pocket-writer-backend] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-27T03:46:47.323+05:30  INFO 9920 --- [pocket-writer-backend] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.10.Final
+2025-05-27T03:46:47.382+05:30  INFO 9920 --- [pocket-writer-backend] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-27T03:46:47.759+05:30  INFO 9920 --- [pocket-writer-backend] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-27T03:46:47.814+05:30  INFO 9920 --- [pocket-writer-backend] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-27T03:46:48.147+05:30  INFO 9920 --- [pocket-writer-backend] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1de73d37
+2025-05-27T03:46:48.150+05:30  INFO 9920 --- [pocket-writer-backend] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-27T03:46:48.258+05:30  WARN 9920 --- [pocket-writer-backend] [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-27T03:46:50.389+05:30  INFO 9920 --- [pocket-writer-backend] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-27T03:46:50.535+05:30  INFO 9920 --- [pocket-writer-backend] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-27T03:46:51.037+05:30  INFO 9920 --- [pocket-writer-backend] [           main] c.p.b.PocketWriterBackendApplication     : 
+----------------------------------------------------------
+Application 'pocket-writer-backend' is running!
+Access URLs:
+- Local:      http://localhost:8080/api/ping
+- Health:     http://localhost:8080/api/health
+- Swagger UI: http://localhost:8080/swagger-ui/index.html
+----------------------------------------------------------
+2025-05-27T03:46:51.671+05:30  INFO 9920 --- [pocket-writer-backend] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on ports 8080 (http), 64772 (http) with context path ''
+2025-05-27T03:46:51.684+05:30  INFO 9920 --- [pocket-writer-backend] [           main] c.p.b.PocketWriterBackendApplicationKt   : Started PocketWriterBackendApplicationKt in 12.125 seconds (process running for 12.889)
+2025-05-27T03:46:51.700+05:30  INFO 9920 --- [pocket-writer-backend] [           main] c.pocketwriter.backend.DataInitializer   : Checking if initial data needs to be seeded...
+2025-05-27T03:46:52.057+05:30 DEBUG 9920 --- [pocket-writer-backend] [           main] org.hibernate.SQL                        : 
+    select
+        t1_0.id,
+        t1_0.created_at,
+        t1_0.name,
+        t1_0.structure_description,
+        t1_0.updated_at 
+    from
+        templates t1_0
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.created_at,
+        t1_0.name,
+        t1_0.structure_description,
+        t1_0.updated_at 
+    from
+        templates t1_0
+2025-05-27T03:46:52.119+05:30  INFO 9920 --- [pocket-writer-backend] [           main] c.pocketwriter.backend.DataInitializer   : Initial data already exists. Skipping seed.
+2025-05-27T03:46:52.142+05:30  INFO 9920 --- [pocket-writer-backend] [           main] c.p.b.PocketWriterBackendApplication     : Pocket Writer Backend Application started successfully
+^C

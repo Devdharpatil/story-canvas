@@ -1,0 +1,22 @@
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Android Studio / IntelliJ
+*.iml
+.idea/
+local.properties
+
+# Android Studio captures
+captures/
+
+# Other common ignores
+.DS_Store
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+.cxx/
+.externalNativeBuild/
